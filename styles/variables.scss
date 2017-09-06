@@ -1,0 +1,32 @@
+
+%button {
+
+	&:hover {
+		transform: scale(1.05);
+	}
+
+	&:active {
+		background-color:#e07f0f;
+		opacity: 0.8;
+		transform: scale(0.98);
+		transition: all 70ms ease;
+	}
+
+	&:focus {
+		outline: 0
+	}
+
+	background-color:#e07f0f;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.0em;
+	font-weight: bold;
+	padding: 0.7em 1.5em;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+	margin-top: 20px;
+
+}

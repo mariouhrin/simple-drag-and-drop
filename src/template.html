@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Simple App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<button class="button--start-upload" id="button--start-upload">Upload files</button>
+
+	<form class="form-upload" id="fileDrag">
+
+		Drag and drop files here <br/> or
+		<br/>
+
+		<label class="form-upload__label--button" for="file">Choose files</label>
+		<input
+			type="file"
+			id="file"
+			class="form-upload__input"
+			accept="image/*, application/pdf"
+			tabindex="1"
+			multiple
+		>
+
+	</form>
+
+	<section class="form-upload__section">
+		<ul class="form-upload__section__ul--list" id="list"></ul>
+	</section>
+
+
+	<button class="button--form-submit--show" id="button--form-submit--show" tabindex="2" disabled>Continue</button>
+
+	<form class="form-submit" id="form-submit" onsubmit="alert('done')">
+
+		<h2>Submit Proposal</h2>
+
+		<label class="form-submit__label--email" for="form-submit--email">Your e-mail address</label>
+		<input type="email" id="form-submit--email" class="form-submit__input--email" tabindex="3">
+
+		<label class="form-submit__label--tel" for="form-submit--tel">Phone number (optional)</label>
+		<input type="tel" id="form-submit--tel" class="form-submit__input--tel" tabindex="4">
+
+		<label for="form-submit__label--button"></label>
+		<input
+			class="form-submit__label--button"
+			type="submit"
+			id="form-submit__label--buton"
+			value="Submit"
+			tabindex="5"
+		>
+
+	</form>
+
+</body>
+</html>

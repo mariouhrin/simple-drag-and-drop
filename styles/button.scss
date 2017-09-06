@@ -1,0 +1,44 @@
+@import './variables.scss';
+
+
+.button--start-upload {
+	@extend %button;
+}
+
+
+.button--form-submit--show {
+
+	@extend  %button;
+
+	&:active {
+		background-color: #2198de;
+	}
+
+	&:disabled {
+		background-color: #2198de;
+		opacity: 0.5;
+	}
+
+	background-color: #2198de;
+	display: none;
+}
+
+
+.form-upload__label--button {
+
+	@extend %button;
+
+	&:active {
+		background-color:#2198de;
+	}
+
+	background-color:#2198de;
+	margin-top: 2em;
+	font-size: 0.5em;
+
+}
+
+
+.form-submit__label--button {
+	@extend .button--start-upload;
+}

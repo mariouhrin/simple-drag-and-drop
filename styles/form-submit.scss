@@ -1,0 +1,33 @@
+.form-submit {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 25px;
+}
+
+
+.form-submit__label--email {
+	font-size: 14px;
+	opacity: 0.4;
+	margin-bottom: 5px;
+}
+
+
+.form-submit__label--tel {
+	@extend .form-submit__label--email;
+}
+
+
+.form-submit__input--email {
+	width: 35%;
+	height: 25px;
+	border-radius: 10px;
+	border: 1px solid lightgrey;
+	margin-bottom: 25px;
+}
+
+
+.form-submit__input--tel{
+	@extend .form-submit__input--email;
+}
+
